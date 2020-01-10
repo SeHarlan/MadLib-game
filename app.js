@@ -1,4 +1,8 @@
+
+
 const submitText = () => {
+
+    if (document.getElementById('adj3').value) {
     const propNoun1Input = document.getElementById('input-prop-noun1');
     const propNoun1Output = propNoun1Input.value;
     const propNoun1Field = document.getElementById('prop-noun1-field');
@@ -100,7 +104,11 @@ const submitText = () => {
     
     const storyField = document.getElementById('story')
     storyField.style.visibility = 'visible'
-    
+    } else {
+        alert(
+            "Please provide the words."
+        )
+    }
 
 }
 

@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    
+}
+
+body {
+    background: linear-gradient(to bottom right, red, purple); 
+    
+}
+
+header {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+label {
+    width: 30%;
+    display: inline-block;
+    text-align: right;
+    margin: 10px auto;
+}
+input {
+    width: 50%;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+#submit-button {
+    width: 100px;
+    display: block;
+    margin: 20px auto;
+}
+
+
+
+
+#story {
+    visibility: hidden;
+    display: block;
+    text-align: center;
+}
