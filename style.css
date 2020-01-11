@@ -4,12 +4,30 @@
 }
 
 body {
-    background: linear-gradient(to bottom right, red, purple); 
+    /* background: linear-gradient(to bottom right, red, purple);  */
+    background-image: url('./vacay.webp'); 
     
+    background-attachment: fixed;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: wheat;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 3px 3px 3px black;
 }
 
 header {
     text-align: center;
+    text-transform: uppercase;
+    /* background-color: hsla(300, 75%, 25%, 0.6); */
+    border: thick double rgba(224, 185, 114, 0.479);
+    border-radius: 6px;
+    /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.445); */
+    width: 40%;
+    margin: 20px auto;
+    font-size: 150%;
+    
+    
 }
 
 p {
@@ -17,15 +35,17 @@ p {
 }
 
 label {
-    width: 30%;
+    width: 25%;
     display: inline-block;
     text-align: right;
     margin: 10px auto;
 }
 input {
+    
     width: 50%;
     display: inline-block;
-    margin: 0 auto;
+    margin: 10px auto;
+    
 }
 
 #submit-button {
@@ -41,4 +61,7 @@ input {
     visibility: hidden;
     display: block;
     text-align: center;
+    background-color: rgba(82, 62, 36, 0.308);
+    border-radius: 20px;
+    border: double rgba(245, 222, 179, 0.384);
 }
