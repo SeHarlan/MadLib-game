@@ -117,17 +117,21 @@ const submitText = () => {
 
         // story field decloration
     const storyField = document.getElementById('story');
-    storyField.style.transform = 'scale(0.4)';
+    storyField.style.visibility = 'visible';
+    storyField.style.opacity = '1';
+    storyField.style.transform = "scale(1)";
     
-    const enlarge = () => {
-        storyField.style.visibility = 'visible';
-        storyField.style.opacity = '1';
-        storyField.style.transform = "scale(1)";
-    };
-    const delayEnlarge = () => {
-        window.setTimeout(enlarge, 500)
-    };
-    delayEnlarge();
+    //delayed version fully in jvscrpt
+    //storyField.style.transform = 'scale(0.4)';
+    // const enlarge = () => {
+    //     storyField.style.visibility = 'visible';
+    //     storyField.style.opacity = '1';
+    //     storyField.style.transform = "scale(1)";
+    // };
+    // const delayEnlarge = () => {
+    //     window.setTimeout(enlarge, 500)
+    // };
+    // delayEnlarge();
     } else {
         alert(
             "Please provide the words."
