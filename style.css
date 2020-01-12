@@ -13,7 +13,7 @@ body {
     background-size: cover;
     color: wheat;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-shadow: 3px 3px 3px black;
+    text-shadow: 2px 2px 3px black;
 }
 
 header {
@@ -32,6 +32,13 @@ header {
 
 p {
     text-align: center;
+}
+
+span {
+    font-style: italic;
+    /* font-weight: bold; */
+    margin-right: 1px;
+    color: rgb(240, 215, 170);
 }
 
 label {
@@ -62,7 +69,7 @@ input {
     margin-bottom: 30px;
     background-color: rgb(245, 222, 179);
     cursor: pointer;
-    transition: 0.2s;
+    transition: 0.2s ease-in-out;
 }
  #submit-button:hover {
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.692)
@@ -76,7 +83,7 @@ input {
     /* margin-bottom: 30px; */
     background-color: rgb(245, 222, 179);
     cursor: pointer;
-    transition: 0.2s;
+    transition: 0.2s ease-in-out;
 }
  #reset-button:hover {
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.692)
@@ -86,9 +93,12 @@ input {
 
 #story {
     visibility: hidden;
+    opacity: 0;
     display: block;
     text-align: center;
     background-color: rgba(82, 62, 36, 0.308);
     border-radius: 20px;
     border: double rgba(245, 222, 179, 0.384);
+    transition: 2.5s ease-out;
+    
 }

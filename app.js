@@ -3,6 +3,9 @@
 const submitText = () => {
 
     if (document.getElementById('adj3').value) {
+    
+
+
     const propNoun1Input = document.getElementById('input-prop-noun1');
     const propNoun1Output = propNoun1Input.value;
     const propNoun1Field = document.getElementById('prop-noun1-field');
@@ -13,6 +16,8 @@ const submitText = () => {
     propNoun1Field3.textContent = propNoun1Output;
     const propNoun1Field4 = document.getElementById('prop-noun1-field4');
     propNoun1Field4.textContent = propNoun1Output;
+    const propNoun1Field5 = document.getElementById('prop-noun1-field5');
+    propNoun1Field5.textContent = propNoun1Output;
 
     const propNoun2Input = document.getElementById('input-prop-noun2');
     const propNoun2Output = propNoun2Input.value;
@@ -24,6 +29,8 @@ const submitText = () => {
     propNoun2Field3.textContent = propNoun2Output;
     const propNoun2Field4 = document.getElementById('prop-noun2-field4');
     propNoun2Field4.textContent = propNoun2Output;
+    const propNoun2Field5 = document.getElementById('prop-noun2-field5');
+    propNoun2Field5.textContent = propNoun2Output;
 
 
     const placeInput = document.getElementById('place');
@@ -108,8 +115,19 @@ const submitText = () => {
     const title = document.getElementById('title');
     title.style.display = 'none';
 
+        // story field decloration
     const storyField = document.getElementById('story');
-    storyField.style.visibility = 'visible';
+    storyField.style.transform = 'scale(0.4)';
+    
+    const enlarge = () => {
+        storyField.style.visibility = 'visible';
+        storyField.style.opacity = '1';
+        storyField.style.transform = "scale(1)";
+    };
+    const delayEnlarge = () => {
+        window.setTimeout(enlarge, 500)
+    };
+    delayEnlarge();
     } else {
         alert(
             "Please provide the words."
@@ -123,7 +141,13 @@ submit.addEventListener('click', submitText)
 
 
 const resetPage = () => {
-    document.location.reload()
+    const userChoice = window.confirm('Are you sure???');
+
+    if (userChoice === true) {
+    document.location.reload(true)
+    } else {
+        return false;
+    }
 }
 
 const reset = document.getElementById('reset-button')
