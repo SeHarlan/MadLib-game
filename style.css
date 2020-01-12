@@ -6,7 +6,7 @@
 body {
     /* background: linear-gradient(to bottom right, red, purple);  */
     background-image: url('./vacay.png'); 
-    
+    background-color: #0b3142;
     background-attachment: fixed;
     /* background-position: center; */
     background-repeat: no-repeat;
@@ -35,17 +35,21 @@ p {
 }
 
 label {
-    width: 25%;
+    width: 30%;
     display: inline-block;
     text-align: right;
-    margin: 10px auto;
+    
 }
 input {
-    
-    width: 50%;
+    width: 39%;
     display: inline-block;
     margin: 10px auto;
     
+}
+
+.break {
+    width: 20%;
+    display: inline-block;
 }
 
 #submit-button {
