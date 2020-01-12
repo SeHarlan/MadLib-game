@@ -5,8 +5,8 @@
 
 body {
     /* background: linear-gradient(to bottom right, red, purple);  */
-    background-image: url('./vacay.png'); 
     background-color: #0b3142;
+    background-image: url('./vacay.png'); 
     background-attachment: fixed;
     /* background-position: center; */
     background-repeat: no-repeat;
@@ -44,6 +44,9 @@ input {
     width: 39%;
     display: inline-block;
     margin: 10px auto;
+    border-radius: 5px;
+    border: double rgba(224, 185, 114, 0.479);
+    background-color: rgba(245, 222, 179, 0.699);
     
 }
 
@@ -55,10 +58,30 @@ input {
 #submit-button {
     width: 100px;
     display: block;
-    margin: 20px auto;
+    margin: 10px auto;
+    margin-bottom: 30px;
+    background-color: rgb(245, 222, 179);
+    cursor: pointer;
+    transition: 0.2s;
 }
+ #submit-button:hover {
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.692)
+    
+ }
 
-
+ #reset-button {
+    width: 100px;
+    display: block;
+    margin: 30px auto;
+    /* margin-bottom: 30px; */
+    background-color: rgb(245, 222, 179);
+    cursor: pointer;
+    transition: 0.2s;
+}
+ #reset-button:hover {
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.692)
+    
+ }
 
 
 #story {

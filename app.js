@@ -102,8 +102,14 @@ const submitText = () => {
     const adj3Field = document.getElementById('adj3-field');
     adj3Field.textContent = adj3Output;
     
-    const storyField = document.getElementById('story')
-    storyField.style.visibility = 'visible'
+    const formField = document.getElementById('form');
+    formField.style.display = 'none';
+
+    const title = document.getElementById('title');
+    title.style.display = 'none';
+
+    const storyField = document.getElementById('story');
+    storyField.style.visibility = 'visible';
     } else {
         alert(
             "Please provide the words."
@@ -115,4 +121,11 @@ const submitText = () => {
 const submit = document.getElementById('submit-button')
 submit.addEventListener('click', submitText)
 
+
+const resetPage = () => {
+    document.location.reload()
+}
+
+const reset = document.getElementById('reset-button')
+reset.addEventListener('click', resetPage)
 
